@@ -1,3 +1,5 @@
+package maxGap;
+
 public class Solution {
 
     public int solution(int N) {
