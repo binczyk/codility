@@ -16,9 +16,9 @@ public class SolutionTest {
 
     @Test
     public void solutionCodilityOddOccuranceTest() {
-        /*Assert.assertEquals(1, solution.solution(testTableEmpty));
+        Assert.assertEquals(1, solution.solution(testTableEmpty));
         Assert.assertEquals(1, solution.solution(testTableSingle));
-        Assert.assertEquals(2, solution.solution(testTableSingle2));*/
+        Assert.assertEquals(2, solution.solution(testTableSingle2));
         Assert.assertEquals(4, solution.solution(testTableCodility));
         Assert.assertEquals(6, solution.solution(testTableMiddle));
         Assert.assertEquals(1, solution.solution(testTableFirst));
