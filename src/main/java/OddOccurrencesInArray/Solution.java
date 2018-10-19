@@ -1,20 +1,20 @@
 package OddOccurrencesInArray;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Solution {
 
     public int solution(int[] A) {
-        Map<Integer, Integer> integers = new HashMap<>();
+        Set<Integer> integers = new HashSet<>();
 
         for (int i = 0; i < A.length; i++) {
-            if (integers.containsKey(A[i])) {
+            if (integers.contains(A[i])) {
                 integers.remove(A[i]);
             } else {
-                integers.put(A[i], A[i]);
+                integers.add(A[i]);
             }
         }
-        return integers.values().iterator().next();
+        return integers.iterator().next();
     }
 }
