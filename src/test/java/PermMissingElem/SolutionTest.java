@@ -15,7 +15,7 @@ public class SolutionTest {
     private Solution solution = new Solution();
 
     @Test
-    public void solutionCodilityOddOccuranceTest() {
+    public void solutionCodilityPermMissingElemTest() {
         Assert.assertEquals(1, solution.solution(testTableEmpty));
         Assert.assertEquals(1, solution.solution(testTableSingle));
         Assert.assertEquals(2, solution.solution(testTableSingle2));
